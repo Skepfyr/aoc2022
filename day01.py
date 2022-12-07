@@ -3,11 +3,11 @@ import sys
 packs = []
 pack = []
 for item in sys.stdin:
-   if not item.strip():
-     packs.append(pack)
-     pack = []
-   else:
-     pack.append(int(item))
+    if not item.strip():
+        packs.append(pack)
+        pack = []
+    else:
+        pack.append(int(item))
 packs.append(pack)
 
 totals = [sum(pack) for pack in packs]

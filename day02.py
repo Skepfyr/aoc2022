@@ -4,8 +4,8 @@ part1_total = 0
 part2_total = 0
 for line in sys.stdin:
     [opponent, me] = line.split(" ")
-    opponent = ord(opponent.strip()) - ord('A')
-    me = ord(me.strip()) - ord('X')
+    opponent = ord(opponent.strip()) - ord("A")
+    me = ord(me.strip()) - ord("X")
     outcome = (me - opponent) % 3
     score = me + 1 + [3, 6, 0][outcome]
     part1_total += score

@@ -1,6 +1,6 @@
-from copy import deepcopy
 import re
 import sys
+from copy import deepcopy
 
 stacks = [
     ["W", "M", "L", "F"],
